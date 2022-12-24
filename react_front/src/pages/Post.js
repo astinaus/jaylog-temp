@@ -113,7 +113,13 @@ const Post = () => {
               {post?.createDate}
             </span>
           </div>
-          <button id="likeButton" className="btn">
+          <button
+            id="likeButton"
+            className="btn"
+            onClick={() => {
+              alert("미구현");
+            }}
+          >
             <Image
               src={post?.likeClicked ? LikeRedImg : LikeImg}
               width="15"
